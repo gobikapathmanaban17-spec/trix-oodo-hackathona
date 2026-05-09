@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Patients</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="showPatients()">
+<div class="navbar">
+ <a href="dashboard.html">Dashboard</a>
+ <a href="patients.html">Patients</a>
+ <a href="appointments.html">Appointments</a>
+ <a href="doctors.html">Doctors</a>
+</div>
+<div class="container">
+<h2>Add Patient</h2>
+<input type="text" id="pname" placeholder="Patient Name">
+<input type="number" id="page" placeholder="Age">
+<input type="text" id="disease" placeholder="Disease">
+<button onclick="addPatient()">
+Add Patient
+</button>
+<h2>Patient List</h2>
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Disease</th>
+</tr>
+<tbody id="patientData"></tbody>
+</table>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
